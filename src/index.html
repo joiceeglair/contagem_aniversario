@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
-    <title>Document</title>
+    <title>Aniversário</title>
 </head>
 <body>
-    <img src="./images/bolo.webp" alt="aniversario">
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Contagem regressiva para meu aniversario em <br>
+                <span id="comemorar"></span>
+            </p>
+            <div class="infos">
+                <ul class="infos__info">
+                    <li class="infos__info__item">
+                        <b>Localização</b>
+                        Marechal Hermes - Rio de Janeiro - RJ
+                    </li>
+                    <li class="infos__info__item">
+                        <b>Data</b>
+                        04 de Novembro de 2023
+                    </li>
+                    <li class="infos__info__item">
+                        <b>Horário</b>
+                        19:00 horas
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event">
+        <div class="container">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Minha comemoração</h2>
+                <p class="event__detail__description">
+                    Venha comemorar comigo na minha festa com toda minha familia e amigos.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bolo.webp" alt="bolo">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
